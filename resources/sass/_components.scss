@@ -1,0 +1,15 @@
+.tw-btn {
+    @apply tw-px-5 tw-py-3 tw-rounded-lg;
+}
+
+.tw-btn-teal {
+    @apply tw-bg-orange-700 tw-text-white;
+}
+
+.tw-btn-white {
+    @apply tw-bg-white tw-text-orange-500;
+}
+
+.tw-input {
+    @apply tw-bg-teal-700 tw-text-white tw-rounded-sm tw-py-1 tw-px-8 tw-border tw-border-yellow-500;
+}
