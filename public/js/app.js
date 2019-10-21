@@ -2024,10 +2024,12 @@ __webpack_require__.r(__webpack_exports__);
           _this.$forceUpdate();
         }
 
-        _this.état_enregistrement = 'Livraison Enregistrée';
+        setTimeout(function () {
+          _this.état_enregistrement = 'Livraison Enregistrée';
+        }, 4000);
         setTimeout(function () {
           _this.état_enregistrement = '';
-        }, 2000);
+        }, 4000);
       })["catch"](function (error) {});
     },
     enregistrer: function enregistrer() {

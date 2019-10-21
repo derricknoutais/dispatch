@@ -9,8 +9,9 @@
 
             {{-- Boutons Fonctionalité --}}
             <div class="tw-flex tw-flex-col tw-mt-10">
-                <div class="tw-flex">
+                <div class="tw-flex tw-items-center">
                     <button class="tw-btn tw-btn-teal" v-if="commande.état !== 'réceptionné'" @click="toggleAjouterBoissons">Ajouter Boissons</button>
+                    <p class="tw-ml-5">@{{ état_enregistrement }}</p>
                 </div>
                 {{-- Ajouter Produit --}}
                 <div class="tw-flex tw-mt-8" v-if="ajoutBoisson">

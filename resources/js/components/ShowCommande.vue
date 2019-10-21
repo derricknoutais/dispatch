@@ -56,17 +56,19 @@ export default {
                 boisson.pivot.id = response.data
 
                 if(! boisson.found){
-                    
                     this.commande.boissons.push(boisson)
                     this.$forceUpdate()
                 } else {
                     this.$forceUpdate()
                 }
-                
+
+                setTimeout(() => {
                     this.état_enregistrement = 'Livraison Enregistrée'
+                }, 4000);
+                
                 setTimeout(() => {
                     this.état_enregistrement = ''
-                }, 2000);
+                }, 4000);
                     
                 
             }).catch(error => {

@@ -33,10 +33,14 @@
                     <img src="/img/logistics.svg" class="tw-text-center tw-w-64">
                     <h1 class="tw-text-center tw-text-6xl tw-text-orange-100 tw-mt-5">{{ config('app.name', 'Laravel') }}</h1>
                     <p class="tw-text-center tw-text-2xl tw-text-orange-200 tw-mt-5">Le leader dans la gestion des débits de boissons</p>
-                    @if(Route::has('login'))
+                    @guest
                         <a class="tw-btn tw-btn-white tw-mt-5 tw-text-lg" href="/register">Créer un compte</a>
                         <p class="tw-text-lg tw-text-orange-200 tw-mt-3">Déja enregistré? <a href="/login">Connectez-vous</a></p>
-                    @endif
+                    @else
+                        <a class="tw-btn tw-btn-white tw-mt-5 tw-text-lg" href="/home">Voir Dashboard</a>
+                    @endguest
+
+
                 </div>
                 
             </div> 

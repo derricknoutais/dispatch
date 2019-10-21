@@ -1,27 +1,45 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex items-center">
-        <div class="md:w-1/2 md:mx-auto">
+    <div class="tw-flex tw-w-full">
+        <div class="tw-flex tw-w-full">
 
-            @if (session('status'))
-                <div class="text-sm border border-t-8 rounded text-green-700 border-green-600 bg-green-100 px-3 py-4 mb-4" role="alert">
-                    {{ session('status') }}
-                </div>
-            @endif
-
-            <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
-
-                <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
-                    Dashboard
-                </div>
-
-                <div class="w-full p-6">
-                    <p class="text-gray-700">
-                        You are logged in!
-                    </p>
-                </div>
+            <div class="tw-w-1/2 tw-border-gray-500 tw-border tw-rounded-lg tw-mt-10 ">
+                <h1 class="tw-text-center tw-text-2xl tw-bg-orange-300 tw-py-3 tw-rounded-t-lg">Commandes</h1>
+                <div class="tw-flex tw-mt-5 tw-py-10">
+                    <div class="tw-w-1/3 tw-text-center tw-flex tw-flex-col">
+                        <p class="tw-text-2xl">{{ sizeof($commandes) }}</p>
+                        <p class="tw-mt-3">Nombre de Commandes</p>
+                    </div>
+                    <div class="tw-w-1/3 tw-text-center tw-flex tw-flex-col">
+                        <p class="tw-text-2xl">2,000,000 F CFA</p>
+                        <p class="tw-mt-3">Valeur de Commandes</p>
+                    </div>
+                    <div class="tw-w-1/3 tw-text-center tw-flex tw-flex-col">
+                        <p class="tw-text-2xl">500</p>
+                        <p class="tw-mt-3">Total Nombre de Casiers</p>
+                    </div>
+                </div> 
             </div>
+
+            <div class="tw-w-1/2 tw-border-gray-500 tw-border tw-rounded-lg tw-mt-10 ">
+                <h1 class="tw-text-center tw-text-2xl tw-bg-orange-300 tw-py-3 tw-rounded-t-lg">Livraisons</h1>
+                <div class="tw-flex tw-mt-5 tw-py-10">
+                    <div class="tw-w-1/3 tw-text-center tw-flex tw-flex-col">
+                        <p class="tw-text-2xl">45</p>
+                        <p class="tw-mt-3">Nombre de Livraisons</p>
+                    </div>
+                    <div class="tw-w-1/3 tw-text-center tw-flex tw-flex-col">
+                        <p class="tw-text-2xl">2,000,000 F CFA</p>
+                        <p class="tw-mt-3">Valeur des Livraisons</p>
+                    </div>
+                    <div class="tw-w-1/3 tw-text-center tw-flex tw-flex-col">
+                        <p class="tw-text-2xl">200</p>
+                        <p class="tw-mt-3">Total Nombre de Casiers</p>
+                    </div>
+                </div> 
+            </div>
+
         </div>
     </div>
 @endsection
