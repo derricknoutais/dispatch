@@ -25,8 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return $commandes = Auth::user()->commandes;
-        $livraisons = Auth::user()->livraisons;
-        return view('home', compact('commandes', 'livraisons'));
+        // return $commandes = Auth::user()->commandes;
+        // $livraisons = Auth::user()->livraisons;
+        // return view('home', compact('commandes', 'livraisons'));
+        return view('home');
     }
 }

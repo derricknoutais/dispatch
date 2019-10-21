@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="tw-flex tw-w-full">
+    {{-- <div class="tw-flex tw-w-full">
         <div class="tw-flex tw-w-full">
 
             <div class="tw-w-1/2 tw-border-gray-500 tw-border tw-rounded-lg tw-mt-10 ">
@@ -41,5 +41,11 @@
             </div>
 
         </div>
+    </div> --}}
+    <div class="tw-flex tw-justify-center tw-items-center tw-flex-col ">
+
+        <img src="/img/under_construction.svg" class="tw-w-1/3 tw-mt-5">
+
+        <h1 class="tw-text-2xl tw-mt-5">Cette page est en cours de construction. Vous serez notifiés lorsqu'elle sera disponible!</h1>
     </div>
 @endsection
