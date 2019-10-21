@@ -63,8 +63,8 @@
 
                         <td>@{{ boisson.prix_achat }}</td>
 
-                        <td v-if="commande.état === 'livré'">@{{ boisson.pivot.quantité_livrée * boisson.prix_vente }}</td>
-                        <td v-else>@{{ boisson.pivot.quantité * boisson.prix_vente }}</td>
+                        <td v-if="commande.état === 'livré'">@{{ boisson.pivot.quantité_livrée * boisson.prix_achat }}</td>
+                        <td v-else>@{{ boisson.pivot.quantité * boisson.prix_achat }}</td>
                     </tr>
                     <tr v-if="reception" class="tw-py-10">
                         <td colspan="2"></td>
