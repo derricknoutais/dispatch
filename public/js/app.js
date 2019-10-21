@@ -2182,6 +2182,9 @@ __webpack_require__.r(__webpack_exports__);
       axios.post('/valider-livraison/' + this.livraison.id, this.livraison).then(function (response) {
         console.log(response.data);
         _this2.livraison.état = 'livré';
+        _this2.valider_livraison = false;
+
+        _this2.$forceUpdate();
       })["catch"](function (error) {
         console.log(error);
       });

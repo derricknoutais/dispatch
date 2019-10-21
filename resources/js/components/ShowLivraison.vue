@@ -69,7 +69,8 @@ export default {
             axios.post('/valider-livraison/' + this.livraison.id, this.livraison).then(response => {
                 console.log(response.data);
                 this.livraison.état = 'livré'
-                
+                this.valider_livraison = false
+                this.$forceUpdate()
             }).catch(error => {
                 console.log(error);
             });
